@@ -1,0 +1,244 @@
+main {
+    display: grid;
+    grid-template-columns: 24% auto;
+    color: gray;
+}
+
+.filter-container {
+    display: flex;
+    height: 840px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.terms-container {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    height: 320px;
+    margin: 30px;
+}
+
+.terms-container h3 {
+    text-align: center;
+    font-size: 32px;
+    color: black;
+    font-family: 'Dancing Script';
+}
+
+.terms-container li {
+    font-size: 16px;
+}
+
+.terms-container div {
+    position: relative;
+    align-self: center;
+}
+
+#term-checkbox {
+    position: absolute;
+    appearance: none;
+    right: -30px;
+    top: -2px;
+    margin-left: 10px;
+    outline: none;
+    border-radius: 2px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+#term-checkbox:checked:after {
+    background-color: gold;
+    content: '\2713';
+    overflow: hidden;
+    padding: 1.8px 4.2px 0px 4px;
+}
+
+.schedule-table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 840px;
+}
+
+#data-container {
+    width: 90%;
+}
+
+.schedule-table {
+    margin-top: 3%;
+    width: 100%;
+    border-radius: 12px;
+    border-collapse: separate;
+    border-spacing: 0px 16px;
+}
+
+.schedule-table thead {
+    background-color: #30C5FF;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+
+.schedule-table th {
+    /* border: 2px solid lightgray; */
+    margin: 0;
+    padding: 25px 30px;
+}
+
+.schedule-table td {
+    border-radius: 3px;
+    padding: 25px 30px;
+}
+
+.schedule-table tbody tr {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.15s background-color ease-in;
+}
+
+.schedule-table tbody tr:hover {
+    transform: scale(1.025);
+    background-color: lightgray;
+}
+
+#pagination-container ul {
+    list-style: none;
+}
+
+#pagination-container li {
+    display: inline;
+    font-size: 18px;
+    border: 2px solid #30C5FF;
+    padding: 4px 10px;
+    margin: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#pagination-container li:first-of-type,
+#pagination-container li:last-of-type {
+    border: none;
+}
+
+#pagination-container li:hover {
+    background-color: #30C5FF;
+    color: white;
+}
+
+.sky-box-container {
+    display: flex;
+    position: relative;
+    grid-column: span 2;
+    height: 440px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sky-box-container div {
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+#sky-box-title {
+    font-family: 'Dancing Script', 'Arial';
+    font-size: 48px;
+    margin: 0;
+}
+
+#sky-box-subtitle {
+    font-family: 'Dancing Script', 'Arial';
+    font-size: 24px;
+    margin: 0;
+}
+
+#skyline {
+    width: 100%;
+    height: 90%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+#plane_right,
+#plane_left {
+    position: absolute;
+    height: 64px;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+#plane_left {
+    top: 40px;
+    left: 20px;
+    animation-name: plane-animation_left;
+}
+
+#plane_right {
+    bottom: 40px;
+    right: 40px;
+    animation-name: plane-animation_right;
+}
+
+@keyframes plane-animation_left {
+    from {
+        left: -5%;
+    }
+
+    to {
+        left: 105%;
+    }
+}
+
+@keyframes plane-animation_right {
+    from {
+        right: -5%;
+    }
+
+    to {
+        right: 105%;
+    }
+}
+
+@media screen and (max-width:1240px) {
+    main {
+        grid-template-columns: 50% auto;
+    }
+
+    .terms-container {
+        height: 440px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    main {
+        display: block;
+    }
+
+    .terms-container {
+        height: 580px;
+    }
+
+    .schedule-table th {
+        border-radius: 3px;
+        padding: 4px 4px;
+        margin: 4px;
+        text-align: center;
+    }
+
+    .schedule-table td {
+        border-radius: 3px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+}

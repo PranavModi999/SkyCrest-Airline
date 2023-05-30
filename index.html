@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skycrest Homepage</title>
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/homepage.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/nav.css" />
+    <link rel="stylesheet" href="plugins/js-snackbar.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html">
+        <img id="logo-img" src="images/logo.png" alt="logo"
+      /></a>
+      <!-- made in illustrator -->
+      <h3 id="slogan-text">-"Rise above the clouds with Skycrest Airline"</h3>
+      <div class="dropdown-container">
+        <button class="sign-button">Sign-in</button>
+        <div class="dropdown">
+          <button class="dropdown-button">Languages</button>
+          <div class="dropdown-content">
+            <a href="#">English</a>
+            <a href="#">French</a>
+            <a href="#">Spanish</a>
+            <a href="#">Hindi</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <img id="menu-icon" src="images/menu.png" alt="menu-icon" />
+        <!-- <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by srip - Flaticon</a> -->
+        <div id="menu-items-container">
+          <!-- home -->
+          <div class="page-options">
+            <a href="index.html">
+              <img class="page-image" src="images/home.png"
+            /></a>
+            <!-- <a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons created by Freepik - Flaticon</a> -->
+            <p>Home</p>
+          </div>
+          <div class="page-options">
+            <a href="profile_screen.html">
+              <img class="page-image" src="images/profile.png"
+            /></a>
+            <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
+            <p>My profile</p>
+          </div>
+          <div class="page-options">
+            <a href="booking_screen.html">
+              <img class="page-image" src="images/flight_calander.png"
+            /></a>
+            <!-- <a href="https://www.flaticon.com/free-icons/flight" title="flight icons">Flight icons created by Umeicon - Flaticon</a> -->
+            <p>Booking</p>
+          </div>
+          <div class="page-options">
+            <a href="flight_schedule_screen.html">
+              <img class="page-image" src="images/flight_schedule.png"
+            /></a>
+            <!-- <a href="https://www.flaticon.com/free-icons/flight" title="flight icons">Flight icons created by Sumitsaengtong - Flaticon</a> -->
+            <p>Schedule</p>
+          </div>
+          <div class="page-options">
+            <a href="about_us_screen.html">
+              <img class="page-image" src="images/about_us.png"
+            /></a>
+            <!-- <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Freepik - Flaticon</a> -->
+            <p>About us</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="snap-container">
+        <section class="top-section">
+          <div>
+            <img id="background-image" src="images/background-image.jpg" />
+            <!-- <a href="https://www.freepik.com/free-photo/airport-terminal_1278164.htm#query=airplane&position=16&from_view=search&track=sph">Image by 4045</a> on Freepik -->
+            <img id="homepage-logo" src="images/logo.png" alt="homepage-logo" />
+            <!-- made in illustrator -->
+          </div>
+          <h3>"Rise above the clouds with Skycrest Airline"</h3>
+          <div class="search-container">
+            <h2>Start your search Now!</h2>
+            <form class="search-form">
+              <input
+                id="location-input"
+                type="text"
+                placeholder="From city/airport"
+              />
+              <input
+                id="Destination-input"
+                type="text"
+                placeholder="Destination"
+              />
+              <input
+                id="departure"
+                type="text"
+                placeholder="Departure Date"
+                onfocus="(this.type='date')"
+              />
+              <input
+                id="arrival"
+                type="text"
+                placeholder="Arrival Date"
+                onfocus="(this.type='date')"
+              />
+              <div>
+                <label for="person-number"
+                  ><img src="images/person.png" alt="person"
+                /></label>
+                <input
+                  id="person-number"
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  value="1"
+                  min="1"
+                  max="5"
+                />
+              </div>
+            </form>
+            <input id="search-button" type="submit" value="Search" />
+          </div>
+        </section>
+        <section class="middle-section">
+          <div class="description-flex-container">
+            <div class="image-discription">
+              <img src="images/airplane.png" alt="airplane" />
+              <!-- <a href="https://www.flaticon.com/free-icons/plane" title="plane icons">Plane icons created by Freepik - Flaticon</a> -->
+              <p>
+                flight with us today and experience the ease and comfort of air
+                travel. We can't wait to welcome you on board!
+              </p>
+            </div>
+            <div class="image-discription">
+              <img src="images/bank.png" alt="bank" />
+              <!-- <a href="https://www.flaticon.com/free-icons/bank" title="bank icons">Bank icons created by Freepik - Flaticon</a> -->
+              <p>
+                Traveling on a budget shouldn't mean sacrificing comfort and
+                convenience. Fly With our affordable fares today!
+              </p>
+            </div>
+            <div class="image-discription">
+              <img src="images/picture.png" alt="picture" />
+              <!-- <a href="https://www.flaticon.com/free-icons/stamp" title="stamp icons">Stamp icons created by Freepik - Flaticon</a> -->
+              <p>
+                Everyone deserves a break from their daily routine, and what
+                better way to relax and unwind than by going on vacation?
+              </p>
+            </div>
+          </div>
+          <h2 id="Destination-title">Top Destination Right Now</h2>
+          <div class="trip-locations">
+            <div class="image-area">
+              <img class="vertical-image" src="images/paris.jpg" alt="Paris" />
+              <!-- Free stock image from freepik.com -->
+              <div class="image-content">
+                <h3>Paris</h3>
+                <p>
+                  The Eiffel Tower is an iconic symbol of Paris and one of the
+                  most visited landmarks in the world. With stunning panoramic
+                  views of the city, it's a must-see attraction for any traveler
+                  seeking a truly unforgettable experience.
+                </p>
+              </div>
+            </div>
+            <div class="image-area">
+              <img class="horizontal-image" src="images/rome.jpg" alt="Rome" />
+              <!-- <a href="https://www.freepik.com/free-photo/beautiful-shot-famous-roman-colosseum-amphitheater-breathtaking-sky-sunrise_8981252.htm#page=2&query=colosseum&position=22&from_view=search&track=sph">Image by wirestock</a> on Freepik -->
+              <div class="image-content">
+                <h3>Rome</h3>
+                <p>
+                  Rome is a city steeped in history and culture, boasting
+                  magnificent landmarks like the Colosseum, Vatican City, and
+                  Trevi Fountain. Discover the heart of Italy and experience its
+                  rich cuisine, art, and architecture.
+                </p>
+              </div>
+            </div>
+            <div class="image-area">
+              <img
+                class="horizontal-image"
+                src="images/india.jpg"
+                alt="India"
+              />
+              <!-- <a href="https://www.freepik.com/free-photo/mesmerizing-shot-famous-historic-taj-mahal-agra-india_10399340.htm#query=taj%20mahal&position=2&from_view=search&track=ais">Image by wirestock</a> on Freepik -->
+              <div class="image-content">
+                <h3>India</h3>
+                <p>
+                  India is a vibrant and diverse country that offers a unique
+                  blend of ancient traditions and modern culture. Explore its
+                  magnificent temples, bustling cities, and stunning natural
+                  landscapes, and savor its delicious cuisine.
+                </p>
+              </div>
+            </div>
+            <div class="image-area">
+              <img
+                class="horizontal-image"
+                src="images/jordan.jpg"
+                alt="Jordan"
+              />
+              <!-- <a href="https://www.freepik.com/free-photo/closeup-shot-petra-uum-jordan-during-daytime_9932410.htm#query=petra%20jordan&position=0&from_view=search&track=ais">Image by wirestock</a> on Freepik -->
+              <div class="image-content">
+                <h3>Jordan</h3>
+                <p>
+                  Jordan is a land of ancient wonders, with Petra's rose-red
+                  city and the Dead Sea's healing waters among its most famous
+                  attractions. Experience its rich history, warm hospitality,
+                  and breathtaking desert landscapes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bottom-section">
+          <div class="sign-up">
+            <p>
+              If you're looking to stay up-to-date with the latest news,
+              exclusive offers, and helpful tips, signing up for our platform is
+              the way to go. Our platform is designed to provide you with
+              valuable insights and resources that will help you make informed
+              decisions, save money, and make the most out of your experiences.
+            </p>
+            <p>
+              When you sign up for our platform, you'll gain access to a wealth
+              of information on a wide range of topics, from travel and
+              lifestyle to finance and technology. You'll receive regular
+              updates, notifications, and newsletters, all tailored to your
+              interests and preferences.
+            </p>
+            <div class="join-us">
+              <form>
+                <input type="email" placeholder="Enter your email address" />
+                <button type="submit">Join Us</button>
+              </form>
+            </div>
+          </div>
+          <div class="about-us">
+            <h3>About US!</h3>
+            <p>
+              At our airline, we understand that every traveler has unique needs
+              and preferences. That's why we offer a range of travel classes to
+              suit your budget and comfort level. Whether you're looking for a
+              premium experience or an affordable option, we've got you
+              covered.For those looking to travel in luxury, our premium class
+              offers exclusive amenities like lie-flat seats, gourmet dining,
+              and personalized service. Our business class offers spacious
+              seating and added comfort, while our economy class provides
+              affordable and reliable travel without sacrificing quality.
+            </p>
+            <p>
+              We also understand the importance of sustainability and are
+              committed to reducing our carbon footprint. From implementing
+              energy-efficient technologies to reducing single-use plastics, we
+              are taking steps to create a more sustainable future for air
+              travel.So when you choose to fly with us, you're not just choosing
+              an airline you're choosing a company that is committed to
+              excellence, safety, sustainability, and community. Book your
+              flight with us today and experience the difference for yourself.
+            </p>
+          </div>
+          <footer>
+            <div class="footer-links">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="index.html">Home screen</a></li>
+                <li><a href="profile_screen.html">Profile screen</a></li>
+                <li><a href="booking_screen.html">Flight Booking page</a></li>
+                <li>
+                  <a href="flight_schedule_screen.html">Flight Schedule page</a>
+                </li>
+                <li><a href="about_us_screen.html">About Us screen</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-promo">
+              <h3>Promotions</h3>
+              <p>
+                Follow us on social media for exclusive deals and discounts!
+              </p>
+              <div class="social-media">
+                <a href="#"><img src="images/facebook.png" /></a>
+                <!-- <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Pixel perfect - Flaticon</a> -->
+                <a href="#"><img src="images/twitter.png" /></a>
+                <!-- <a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Freepik - Flaticon</a> -->
+                <a href="#"><img src="images/instagram.png" /></a>
+                <!-- <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Pixel perfect - Flaticon</a> -->
+              </div>
+              <p>&copy; 2023 SkyCrest Airline. All rights reserved.</p>
+              <p>Page done By: Pranav Modi</p>
+            </div>
+            <div class="footer-contact">
+              <h3>Contact Us</h3>
+              <p>
+                Email:
+                <a href="mailto:info@skycrestairline.com"
+                  >info@skycrestairline.com</a
+                >
+              </p>
+              <p>Phone: <a href="tel:+1-123-456-7890">+1 (123) 456-7890</a></p>
+              <p>Location: 123 anywhere street, Kitchener</p>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </main>
+    <script src="javascript/homepage.js"></script>
+    <script src="javascript/model_flight.js"></script>
+    <script src="plugins/js-snackbar.js"></script>
+  </body>
+</html>

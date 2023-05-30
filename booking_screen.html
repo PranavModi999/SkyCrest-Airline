@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skycrest Homepage</title>
+  <link rel="stylesheet" href="CSS/general.css" />
+  <!-- <link rel="stylesheet" href="CSS/homepage.css" /> -->
+  <link rel="stylesheet" href="CSS/footer.css" />
+  <link rel="stylesheet" href="CSS/nav.css" />
+  <link rel="stylesheet" href="CSS/booking.css">
+  <link rel="stylesheet" href="plugins/js-snackbar.css">
+</head>
+
+<body>
+  <div>
+    <nav>
+      <a href="index.html">
+        <img id="logo-img" src="images/logo.png" alt="logo" /></a>
+      <!-- made in illustrator -->
+      <h3 id="slogan-text">-"Rise above the clouds with Skycrest Airline"</h3>
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <button class="dropdown-button">Languages</button>
+          <div class="dropdown-content">
+            <a href="#">English</a>
+            <a href="#">French</a>
+            <a href="#">Spanish</a>
+            <a href="#">Hindi</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <img id="menu-icon" src="images/menu.png" alt="menu-icon" />
+        <!-- <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by srip - Flaticon</a> -->
+        <div id="menu-items-container">
+          <!-- home -->
+          <div class="page-options">
+            <a href="index.html"> <img src="images/home.png" /></a>
+            <p>Home</p>
+          </div>
+          <!-- <a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons created by Freepik - Flaticon</a> -->
+          <!-- profile -->
+          <div class="page-options">
+            <a href="profile_screen.html"> <img src="images/profile.png" /></a>
+            <p>My profile</p>
+          </div>
+          <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
+          <!-- flight booking -->
+          <div class="page-options">
+            <a href="booking_screen.html"> <img src="images/flight_calander.png" /></a>
+            <p>Booking</p>
+          </div>
+          <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
+          <!-- <a href="https://www.flaticon.com/free-icons/flight" title="flight icons">Flight icons created by Umeicon - Flaticon</a> -->
+          <!-- flight Schedule -->
+          <div class="page-options">
+            <a href="flight_schedule_screen.html">
+              <img src="images/flight_schedule.png" /></a>
+            <p>Schedule</p>
+          </div>
+          <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
+          <!-- <a href="https://www.flaticon.com/free-icons/flight" title="flight icons">Flight icons created by Sumitsaengtong - Flaticon</a> -->
+          <!-- about us -->
+          <div class="page-options">
+            <a href="about_us_screen.html"> <img src="images/about_us.png" /></a>
+            <p>About us</p>
+          </div>
+          <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
+          <!-- <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Freepik - Flaticon</a> -->
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div id="background-image">
+        <img src="images/imageFlight.jpg" />
+        <img src="images/imageFlight - invert.jpg" />
+      </div>
+      <h1>Plan Your Trip Today</h1>
+      <p class="intro-text">Thank you for considering Skycrest Airline for your upcoming travels. We are dedicated to
+        providing our
+        customers
+        with a comfortable and convenient flying experience. With a wide range of destinations and flexible booking
+        options, we strive to make your travels as stress-free as possible.
+
+        Our experienced crew members are committed to ensuring your safety and comfort throughout your journey. From
+        takeoff to landing, we go above and beyond to provide exceptional service and a pleasant flying experience.
+
+        In addition to our exceptional service, we offer a variety of amenities to make your flight more comfortable.
+        Our
+        seats are designed for maximum comfort and legroom, and we offer in-flight entertainment and refreshments to
+        make
+        your journey even more enjoyable.
+
+        At Skycrest Airline, we understand that your time is valuable. That's why we offer flexible booking options to
+        meet your travel needs. Whether you need to book a last-minute flight or plan your travels well in advance, we
+        have options to suit your schedule and budget.
+
+        Thank you for choosing Skycrest Airline for your travels. We look forward to welcoming you on board soon!</p>
+      <h1>Flight Booking Form</h1>
+      <form action="index.html" method="post">
+        <!-- Form fields will go here -->
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date" required>
+
+        <label for="arrival-date">Arrival Date:</label>
+        <input type="date" id="arrival-date" name="arrival-date" required>
+
+        <label for="origin">City:</label>
+        <input type="text" id="origin" name="origin" required>
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+        <label for="passengers">Passengers:</label>
+        <select id="passengers" name="passengers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button class="submit-button" type="submit">Book Now</button>
+      </form>
+      <div id="main">
+        <div id="second">
+          <form action="submit_feedback.php" method="post">
+            <h1>feedback form</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="booking_number">Booking Number:</label>
+            <input type="text" id="booking_number" name="booking_number" required><br><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+          </form>
+
+        </div>
+        <div id="first">
+          <img src="images/mapImage.png" alt="">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="index.html">Home screen</a></li>
+          <li><a href="profile_screen.html">Profile screen</a></li>
+          <li><a href="booking_screen.html">Flight Booking page</a></li>
+          <li><a href="flight_schedule_screen.html">Flight Schedule page</a></li>
+          <li><a href="about_us_screen.html">About Us screen</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-promo">
+        <h3>Promotions</h3>
+        <p>
+          Follow us on social media for exclusive deals and discounts!
+        </p>
+        <div class="social-media">
+          <a href="#"><img src="images/facebook.png" /></a>
+          <!-- <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Pixel perfect - Flaticon</a> -->
+          <a href="#"><img src="images/twitter.png" /></a>
+          <!-- <a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Freepik - Flaticon</a> -->
+          <a href="#"><img src="images/instagram.png" /></a>
+          <!-- <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Pixel perfect - Flaticon</a> -->
+        </div>
+        <p>&copy; 2023 SkyCrest Airline. All rights reserved.</p>
+        <p>Page done By: Gagan Doomra</p>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>
+          Email:
+          <a href="mailto:info@skycrestairline.com">info@skycrestairline.com</a>
+        </p>
+        <p>Phone: <a href="tel:+1-123-456-7890">+1 (123) 456-7890</a></p>
+        <p>Location: 123 anywhere street, Kitchener</p>
+      </div>
+    </footer>
+    </section>
+  </div>
+  </main>
+  </div>
+  <script src="javascript/bookingPage.js"></script>
+  <script src="javascript/model_flight.js"></script>
+  <script src="javascript/model_user.js"></script>
+  <script src="plugins/js-snackbar.js"></script>
+</body>
+
+</html>

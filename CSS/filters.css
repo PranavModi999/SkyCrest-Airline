@@ -1,0 +1,175 @@
+.filter-menu {
+    cursor: default;
+    height: 90%;
+    width: 80%;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.60);
+    border-radius: 12px;
+}
+
+.title-container {
+    padding: 1px;
+    border-radius: 12px 12px 0px 0px;
+    background-color: #30C5FF;
+}
+
+.filter-title {
+    color: black;
+    font-size: 28px;
+    font-family: 'Dancing Script', 'Arial';
+    border-bottom: 2px solid black;
+    border-color: #30C5FF;
+}
+
+.horizontal-line {
+    width: 90%;
+}
+
+.note-container p {
+    color: gray;
+    font-size: 12px;
+}
+
+.search form {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search img {
+    height: 18px;
+    padding: 0.5rem 1rem;
+    background-color: #30C5FF;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.15s opacity ease-in;
+}
+
+.search img:hover {
+    opacity: 0.7;
+}
+
+.search img:active {
+    opacity: 0.5;
+}
+
+.filter-slider-container {
+    padding: 0px 20px;
+}
+
+.filter-slider {
+    box-sizing: border-box;
+    width: 98%;
+    color: #30C5FF;
+    line-height: 1;
+    background-color: #f1f1f1;
+    height: 2em;
+    appearance: none;
+}
+
+.filter-slider::-webkit-slider-thumb {
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+    z-index: 1;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: #30C5FF;
+    border-radius: 3px;
+}
+
+
+#duration-slider,
+#price-slider {
+    outline: none;
+    margin: 24px 0px 6px 0px;
+    position: relative;
+}
+
+.min-value-slider {
+    position: absolute;
+    left: 0;
+    top: -30px;
+}
+
+.max-value-slider {
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.ticket-type-container,
+.ticket-class-container {
+    margin: 30px 0px;
+}
+
+.ticket-type-container h2,
+.ticket-class-container h2,
+.filter-slider-container label h2 {
+    font-size: 18px;
+}
+
+.ticket-class-container div {
+    margin-left: 100px;
+    margin-bottom: 8px;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-option {
+    appearance: none;
+    border: 2px solid gray;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.ticket-option:checked {
+    background-color: #555;
+}
+
+.apply-button {
+    margin: 20px;
+    font-size: 22px;
+    padding: 6px 16px;
+    color: #f1f1f1;
+    background-color: #30C5FF;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.15s opacity ease-in-out;
+}
+
+.apply-button:hover {
+    opacity: 0.7;
+}
+
+.apply-button:active {
+    opacity: 0.5;
+}
+

@@ -1,0 +1,257 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  grid-template-columns: 24% auto;
+  color: gray;
+}
+
+.title-container {
+  padding: 1px;
+  border-radius: 12px 12px 0px 0px;
+  background-color: #82ff9e;
+}
+
+.personal-info span {
+  color: red;
+}
+
+.personal-info-title-container {
+  display: flex;
+  justify-content: center;
+  padding: 1px;
+  border-radius: 12px 12px 0px 0px;
+  background-color: #82ff9e;
+}
+
+.personal-info-title {
+  color: black;
+  font-size: 28px;
+  font-family: "Dancing Script", "Arial";
+}
+
+.filter-title {
+  color: black;
+  font-size: 28px;
+  font-family: "Dancing Script", "Arial";
+}
+
+.password form {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.personal-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+}
+
+.personal-info {
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  margin-right: 30px;
+  margin-left: 30px;
+  width: 100%;
+  height: 85%;
+}
+
+.personal-info label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: black;
+}
+
+.personal-info input[type="text"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+.apply-button {
+  background-color: #82ff9e;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  margin-left: 40%;
+}
+
+.apply-button:hover {
+  background-color: #30c5ff;
+}
+
+.sky-box-container {
+  display: flex;
+  position: relative;
+  grid-column: span 2;
+  height: 440px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sky-box-container div {
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+
+#sky-box-title {
+  font-family: "Dancing Script", "Arial";
+  font-size: 48px;
+  margin: 0;
+  color: black;
+}
+
+#sky-box-subtitle {
+  font-family: "Dancing Script", "Arial";
+  font-size: 24px;
+  margin: 0;
+  color: black;
+}
+
+#skyline {
+  width: 100%;
+  height: 90%;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+#cloud1,
+#cloud2,
+#cloud3 {
+  position: absolute;
+  height: 64px;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+
+#cloud1 {
+  top: 40px;
+  left: 60px;
+  animation-name: cloud1-animation;
+}
+
+#cloud2 {
+  top: 60px;
+  left: 140px;
+  animation-name: cloud2-animation;
+}
+
+#cloud3 {
+  top: 40px;
+  left: 220px;
+  animation-name: cloud3-animation;
+}
+
+@keyframes cloud1-animation {
+  from {
+    left: 60px;
+  }
+
+  to {
+    left: 140px;
+  }
+}
+
+@keyframes cloud2-animation {
+  from {
+    left: 140px;
+  }
+
+  to {
+    left: 240px;
+  }
+}
+
+@keyframes cloud3-animation {
+  from {
+    left: 240px;
+  }
+
+  to {
+    left: 300px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  main {
+    grid-template-columns: 50% auto;
+  }
+
+  .terms-container {
+    height: 440px;
+  }
+
+  .personal-info-container {
+    height: 190vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #img_avatar {
+    margin-left: 30%;
+  }
+
+  .apply-button {
+    margin-left: 20%;
+  }
+
+  main {
+    display: block;
+  }
+
+  .terms-container {
+    height: 580px;
+  }
+
+  .schedule-table th {
+    border-radius: 3px;
+    padding: 4px 4px;
+    margin: 4px;
+    text-align: center;
+  }
+
+  .schedule-table td {
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .personal-info-container {
+    height: 200vh;
+  }
+}
+
+.profile-image {
+  margin-left: 45%;
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

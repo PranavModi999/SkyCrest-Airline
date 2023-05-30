@@ -1,0 +1,181 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 28px;
+  text-align: center;
+  color: white;
+  font-family: "Dancing Script", "Arial";
+
+}
+
+
+
+label {
+  font-weight: bold;
+
+  color: white;
+}
+
+.intro-text {
+  font-size: 16px;
+  margin: 12px 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.submit-button {
+  font-size: 22px;
+  border-radius: 24px;
+  padding: 12px 24px;
+  background-color: black;
+}
+
+input,
+select {
+  border-radius: 12px;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 50%;
+  border: none;
+}
+
+input:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+button {
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #30c4ff73;
+}
+
+button:hover {
+  background-color: #30c4ff7a;
+}
+
+#background-image {
+  position: absolute;
+  width: 100%;
+  z-index: -99;
+  overflow: hidden;
+}
+
+#background-image img {
+  margin: -2px;
+  padding: 0;
+}
+
+
+#main {
+  margin-top: 20%;
+  width: 90%;
+  margin-bottom: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+#first {
+  height: 20vw;
+  width: 100%;
+  padding-left: 10%;
+}
+
+#first img {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  width: 54%;
+}
+
+
+#second {
+  height: 60vh;
+  width: 90%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#second label {
+  font-size: 20px;
+  color: #fff;
+}
+
+#second input[type="text"],
+#second input[type="email"],
+#second textarea {
+  border-radius: 12px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #333;
+}
+
+#second textarea {
+  height: 150px;
+}
+
+#second input[type="submit"] {
+  background-color: #30c4ff7a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#second input:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width:1240px) {
+
+  #main {
+    margin-top: 40%;
+    grid-template-columns: 1fr;
+  }
+
+  #first {
+    display: none;
+  }
+
+  #second {
+    justify-self: center;
+    margin-left: 0;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .intro-text {
+    font-size: 12px;
+  }
+
+  #first {
+    display: none;
+  }
+}

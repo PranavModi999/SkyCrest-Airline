@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Schedule Screen</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/schedule.css">
+    <link rel="stylesheet" href="CSS/filters.css">
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"> <img id="logo-img" src="images/logo.png" alt="logo"></a>
+        <!-- made in illustrator -->
+        <h3 id="slogan-text">-"Rise above the clouds with Skycrest Airline"</h3>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button class="dropdown-button">Languages</button>
+                <div class="dropdown-content">
+                    <a href="#">English</a>
+                    <a href="#">French</a>
+                    <a href="#">Spanish</a>
+                    <a href="#">Hindi</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-items">
+            <img id="menu-icon" src="images/menu.png" alt="menu-icon">
+            <!-- <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by srip - Flaticon</a> -->
+            <div id="menu-items-container">
+                <div class="page-options">
+                    <a href="index.html"> <img src="images/home.png"></a>
+                    <!-- <a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons created by Freepik - Flaticon</a> -->
+                    <p>Home</p>
+                </div>
+                <div class="page-options">
+                    <a href="profile_screen.html"> <img src="images/profile.png"></a>
+                    <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
+                    <p>My profile</p>
+                </div>
+                <div class="page-options">
+                    <a href="booking_screen.html"> <img src="images/flight_calander.png"></a>
+                    <!-- <a href="https://www.flaticon.com/free-icons/flight" title="flight icons">Flight icons created by Umeicon - Flaticon</a> -->
+                    <p>Booking</p>
+                </div>
+                <div class="page-options">
+                    <a href="flight_schedule_screen.html"> <img src="images/flight_schedule.png"></a>
+                    <!-- <a href="https://www.flaticon.com/free-icons/flight" title="flight icons">Flight icons created by Sumitsaengtong - Flaticon</a> -->
+                    <p>Schedule</p>
+                </div>
+                <!-- about us -->
+                <div class="page-options">
+                    <a href="about_us_screen.html"> <img src="images/about_us.png"></a>
+                    <!-- <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Freepik - Flaticon</a> -->
+                    <p>About us</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="sky-box-container">
+            <img id="skyline" src="images/skyline3.jpg" alt="skyline">
+            <!-- <a href="https://www.freepik.com/free-vector/night-landscape-with-lake-mountains-trees-silhouettes-coast-vector-cartoon-illustration-nature-scenery-with-coniferous-forest-river-shore-rocks-moon-clouds-stars-sky_21184212.htm#query=night%20sky&position=8&from_view=search&track=ais">Image by upklyak</a> on Freepik            <img id="plane_left" src="images/plane_left.png" alt="plane"> -->
+            <img id="plane_left" src="images/plane_left.png" alt="plane">
+            <img id="plane_right" src="images/plane_right.png" alt="plane">
+            <!-- <a href="https://www.flaticon.com/free-icons/plane" title="plane icons">Plane icons created by Freepik - Flaticon</a> -->
+            <div>
+                <p id="sky-box-title">See all flight Schedule Now!</p>
+                <p id="sky-box-subtitle">fly with us Now.</p>
+            </div>
+        </section>
+        <section class="filter-container">
+            <div class="filter-menu">
+                <div class="title-container">
+                    <h2 class="filter-title">Filters:</h2>
+                </div>
+                <div class="note-container">
+                    <hr class="horizontal-line">
+                    <p>Note:The cheapest flight is included in the initial price</p>
+                    <hr class="horizontal-line">
+                </div>
+                <div class="search">
+                    <form>
+                        <input id="search-bar" type="text" placeholder="Type here to search">
+                        <img src="images/search.png">
+                    </form>
+                </div>
+                <div class="ticket-type-container">
+                    <h2>Ticket Type</h2>
+                    <form>
+                        <div>
+                            <label>
+                                <input class="ticket-option" type="radio" name="ticketType" value="child">
+                                Child
+                            </label>
+                            <label>
+                                <input class="ticket-option" type="radio" name="ticketType" value="adult">
+                                Adult
+                            </label>
+                            <label>
+                                <input class="ticket-option" type="radio" name="ticketType" value="student">
+                                Student
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="filter-slider-container">
+                    <label for="duration-slider">
+                        <h2>Duration:</h2>
+                    </label>
+                    <div id="duration-slider">
+                        <p class="min-value-slider">1hr</p>
+                        <p class="max-value-slider">24hr</p>
+                        <input class="filter-slider" type="range">
+                    </div>
+                    <label for="price-slider">
+                        <h2>Price:</h2>
+                    </label>
+                    <div id="price-slider">
+                        <p class="min-value-slider">0$</p>
+                        <p class="max-value-slider">10k</p>
+                        <input class="filter-slider" type="range">
+                    </div>
+                </div>
+                <div class="ticket-class-container">
+                    <h2>Ticket Class</h2>
+                    <form>
+                        <div>
+                            <label>
+                                <input class="ticket-option" type="radio" name="ticketClass" value="child">
+                                Economy
+                            </label>
+                            <label>
+                                <input class="ticket-option" type="radio" name="ticketClass" value="adult">
+                                Business
+                            </label>
+                            <label>
+                                <input class="ticket-option" type="radio" name="ticketClass" value="student">
+                                First
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <input class="apply-button" type="submit" value="Apply filters">
+            </div>
+
+        </section>
+        <section class="schedule-table-container">
+            <div id="data-container">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Flight No.</th>
+                            <th>Departure time</th>
+                            <th>Arrival time</th>
+                            <th>Destination</th>
+                            <th>City</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="pagination-container"></div>
+
+        </section>
+        <section class="terms-container">
+            <h3>Term's and conditions</h3>
+            <p>SkyCrest Airlines schedule page provides passengers with flight schedules that are subject to change
+                without prior notice. Although the schedules are listed for informational purposes, they should not be
+                considered as a guarantee of flight availability. It is important to note that SkyCrest Airlines is not
+                liable for any damages or losses incurred as a result of relying solely on the information provided on
+                the schedule page. The airline reserves the right to cancel or modify any flight listed on the schedule
+                page, at any time and without prior notice. Therefore, passengers are advised to check the schedule page
+                frequently to confirm the status of their flights.</p>
+            <ol>
+                <li>
+                    The airline reserves the right to cancel or modify any flight listed on the schedule page, at any
+                    time and without prior notice.
+                </li>
+                <li>
+                    Passengers are responsible for checking the schedule page frequently to confirm the status of their
+                    flights.
+                </li>
+                <li>
+                    SkyCrest Airlines will make every effort to update the schedule page with the most accurate and
+                    up-to-date information available.
+                </li>
+
+            </ol>
+            <div>
+                <label for="term-checkbox">
+                    Please Check this box to agree to all the terms and conditions
+                </label>
+                <input id="term-checkbox" type="checkbox">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="index.html">Home screen</a></li>
+                <li><a href="profile_screen.html">Profile screen</a></li>
+                <li><a href="booking_screen.html">Flight Booking page</a></li>
+                <li><a href="flight_schedule_screen.html">Flight Schedule page</a></li>
+                <li><a href="about_us_screen.html">About Us screen</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-promo">
+            <h3>Promotions</h3>
+            <p>Follow us on social media for exclusive deals and discounts!</p>
+            <div class="social-media">
+                <a href="#"><img src="images/facebook.png"></a>
+                <!-- <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Pixel perfect - Flaticon</a> -->
+                <a href="#"><img src="images/twitter.png"></a>
+                <!-- <a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Freepik - Flaticon</a> -->
+                <a href="#"><img src="images/instagram.png"></a>
+                <!-- <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Pixel perfect - Flaticon</a> -->
+            </div>
+            <p>&copy; 2023 SkyCrest Airline. All rights reserved.</p>
+            <p>Page done By: Pranav Modi</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@skycrestairline.com">info@skycrestairline.com</a></p>
+            <p>Phone: <a href="tel:+1-123-456-7890">+1 (123) 456-7890</a></p>
+            <p>Location: 123 anywhere street, Kitchener</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="javascript/schedulePage.js"></script>
+    <script src="javascript/model_flight.js"></script>
+    <script src="plugins/pagination.js"></script>
+</body>
+
+</html>
